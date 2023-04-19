@@ -1,0 +1,28 @@
+<p>hero-list works!</p>
+
+<!--  In the template, you can access a property using 
+    interpolation {{ }} or property binding [] -->
+<div>
+    <!-- Accessing property using interpolation {{ }}-->
+    <div>
+        Using interpolation, properties/members can be accessed
+        by it's template. The 'title' below refers to
+        hero-list.component.ts
+        <p>title: {{ title }}</p>
+    </div>
+
+    <!-- Accessing property using property binding [ ] -->
+    <div>
+        The attribute 'value' of 'input' element will follow 'title':
+        <br>
+        value:
+        <input [value]="title">
+    </div>
+
+    <div>
+        <!-- Event binding to update the property -->
+        <p>Press the button below to change the title</p>
+        <button (click)="updateTitle()">Update title</button>
+    </div>
+
+</div>
